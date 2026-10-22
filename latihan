@@ -1,0 +1,107 @@
+#latihan 2
+harga = 12500
+jumlah = 4
+total = harga * jumlah
+sisa_uang = total % 2000
+harga_diskon = total - 5000
+print("Harga buku :", harga)
+print("Jumlah Barang :", jumlah)    
+print("Total Harga :", total)
+print("Sisa Uang :", sisa_uang)
+print("Harga Diskon :", harga_diskon)
+
+3patikum 3
+nilai = 82
+kehadiran = 90
+
+syarat_nilai = nilai >= 75
+syarat_kehadiran = kehadiran >= 80
+
+lulus = syarat_nilai and syarat_kehadiran
+
+print("Nilai:", nilai)
+print("Kehadiran:", kehadiran, "%")
+print("Memenuhi syarat nilai:", syarat_nilai)
+print("Memenuhi syarat kehadiran:", syarat_kehadiran)
+print("Status lulus:", lulus)
+
+# Mengubah nilai menjadi 70
+nilai = 70
+
+syarat_nilai = nilai >= 75
+lulus = syarat_nilai and (kehadiran >= 80)
+
+print("\nSetelah nilai diubah menjadi 70:")
+print("Memenuhi syarat nilai:", syarat_nilai)
+print("Status lulus dengan and:", lulus)
+print("Status dengan or:", syarat_nilai or (kehadiran >= 80))
+
+#latihan 4
+poin = 100
+print("Nilai awal:", poin)
+
+poin += 25
+print("Setelah poin += 25:", poin)
+
+poin -= 10
+print("Setelah poin -= 10:", poin)
+
+poin *= 2
+print("Setelah poin *= 2:", poin)
+
+poin /= 2
+print("Setelah poin /= 2:", poin)
+
+#latihan 5
+nilai = [78, 85, 90, 85]
+mahasiswa = {"nama": "Nadia", "kelas": "IF-A"}
+koordinat = (5, 8)
+angka = {2, 4, 4, 6, 8}
+
+# 1. Menampilkan nilai pertama dari list
+print("Nilai pertama:", nilai[0])
+
+# 2. Menambahkan nilai 95
+nilai.append(95)
+print("List nilai terbaru:", nilai)
+
+# 3. Menampilkan nama mahasiswa
+print("Nama mahasiswa:", mahasiswa["nama"])
+
+# 4. Menampilkan koordinat pertama
+print("Koordinat pertama:", koordinat[0])
+
+# 5. Menampilkan angka unik secara berurutan
+print("Angka unik:", sorted(angka))
+
+
+# latihan terintegrasi
+nama1 = "Fajar"
+nilai_tugas1 = 80
+nilai_ujian1 = 90
+
+rata_rata1 = (nilai_tugas1 + nilai_ujian1) / 2
+lulus1 = rata_rata1 >= 75
+
+print("=== Rekap Nilai Mahasiswa 1 ===")
+print("Nama:", nama1)
+print("Nilai tugas:", nilai_tugas1)
+print("Nilai ujian:", nilai_ujian1)
+print("Rata-rata:", rata_rata1)
+print("Status lulus:", lulus1)
+
+# Data mahasiswa kedua
+nama2 = "Nadia"
+nilai_tugas2 = 60
+nilai_ujian2 = 70
+
+rata_rata2 = (nilai_tugas2 + nilai_ujian2) / 2
+lulus2 = rata_rata2 >= 75
+
+print("\n=== Rekap Nilai Mahasiswa 2 ===")
+print("Nama:", nama2)
+print("Nilai tugas:", nilai_tugas2)
+print("Nilai ujian:", nilai_ujian2)
+print("Rata-rata:", rata_rata2)
+print("Status lulus:", lulus2)
+
