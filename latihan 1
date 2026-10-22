@@ -1,0 +1,10 @@
+#latihan 1
+nama = ' fajar'
+umur = 19
+umur = 20
+berat = 54.5
+terdaftar = True
+print( " nama saya " + nama )
+print( " umur saya " + str(umur) )
+print( " berat saya " + str(berat) )
+print( " terdaftar " + str(terdaftar) )
